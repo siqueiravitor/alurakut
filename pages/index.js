@@ -238,7 +238,6 @@ export async function getServerSideProps(context) {
           },
       }
   ).then((resposta) => resposta.json());
-  console.log(isAuthenticated);
   if (!isAuthenticated) {
     return {
         redirect: {
